@@ -1,0 +1,9 @@
+[submodule "projects/metadata"]
+	path = projects/metadata
+	url = https://github.com/fluid-project/metadata.git
+[submodule "projects/videoPlayer"]
+	path = projects/videoPlayer
+	url = https://github.com/fluid-project/videoPlayer.git
+[submodule "projects/prefsEditors"]
+	path = projects/prefsEditors
+	url = https://github.com/fluid-project/prefsEditors.git
