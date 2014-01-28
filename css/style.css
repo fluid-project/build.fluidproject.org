@@ -22,6 +22,9 @@ div {
     padding: 0;
     margin-bottom: 1em;
 }
+.flbuild-major-demo a {
+    font-weight: bold;
+}
 
 .flbuild-prefs-framework {
     background: url("../images/floe-uio.jpg");
@@ -53,8 +56,8 @@ div {
     background-color: #4AC39A;
 }
 
-.flbuild-top-description {
-    
+.flbuild-top-description .col-sm-10 {
+    padding-left: 0;
 }
 
 .flbuild-top h2,
@@ -63,6 +66,9 @@ div {
     background-color: #F6FBE9;
     padding: 0.4em;
     display: inline-block;
+}
+.flbuild-top div.flbuild-blocklink {
+    margin-bottom: 0.3em;    
 }
 
 .flbuild-box {
@@ -77,9 +83,15 @@ a {
     line-height: 1;
 }
 
+.flbuild-blocklinks {
+    padding: 0;    
+}
+.flbuild-top div.flbuild-blocklinks {
+    display: inline-block;
+}
 .flbuild-bottom div.flbuild-blocklink {
+    padding: 0.5em 0;
     color: #FFFFFF;
-    padding-left: 0;
 }
 .flbuild-bottom .flbuild-blocklink a {
     color: #FFFFFF;
