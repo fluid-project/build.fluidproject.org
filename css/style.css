@@ -91,12 +91,3 @@ div.flbuild-blocklink {
     border-bottom: none;
     padding: 0.5em;
 }
-.flbuild-blocklink-icon {
-    color: #FFFFFF;
-    background-color: #000000;
-    font-size: 1.8em;
-}
-.flbuild-blocklink-icon:before {
-    font-family: "Webdings";
-    content: "";
-}
