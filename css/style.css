@@ -1,0 +1,28 @@
+.flbuild-major-demo {
+    height: 15em;
+}
+
+.flbuild-overlay {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.flbuild-prefs-framework .flbuild-overlay {
+    background-color: #F0DE00;
+}
+
+.flbuild-video-player .flbuild-overlay {
+    background-color: #53A35E;
+}
+
+.flbuild-metadata-authoring .flbuild-overlay {
+    background-color: #4AC39A;
+}
+
+.flbuild-top-description {
+    position: relative;
+    top: -15em;
+    background-color: rgba(255,255,255,0.5);
+}
