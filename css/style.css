@@ -1,3 +1,16 @@
+
+body {
+    background-color: #F0F0F0;
+}
+
+h1, h2 {
+    font-family: monospace;
+}
+
+div {
+    padding: 1em;
+}
+
 .flbuild-major-demo {
     height: 15em;
 }
@@ -25,4 +38,35 @@
     position: relative;
     top: -15em;
     background-color: rgba(255,255,255,0.5);
+}
+
+
+.flbuild-box {
+    background-color: white;
+    margin: 1em;
+}
+
+a {
+    color: #000000;
+    border-bottom: solid 2px #FFE57C;
+}
+
+div.flbuild-blocklink {
+    color: #FFFFFF;
+    padding-left: 0;
+}
+.flbuild-blocklink a {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-bottom: none;
+    padding: 0.5em;
+}
+.flbuild-blocklink-icon {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 1.8em;
+}
+.flbuild-blocklink-icon:before {
+    font-family: "Webdings";
+    content: "";
 }
