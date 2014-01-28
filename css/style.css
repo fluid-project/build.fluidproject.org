@@ -5,6 +5,7 @@ body {
 h1, h2 {
     font-family: monospace;
 }
+
 div {
     padding: 1em;
 }
@@ -13,7 +14,28 @@ div {
     background-color: white;
     margin: 1em;
 }
+
 a {
     color: #000000;
     border-bottom: solid 2px #FFE57C;
+}
+
+div.flbuild-blocklink {
+    color: #FFFFFF;
+    padding-left: 0;
+}
+.flbuild-blocklink a {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-bottom: none;
+    padding: 0.5em;
+}
+.flbuild-blocklink-icon {
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 1.8em;
+}
+.flbuild-blocklink-icon:before {
+    font-family: "Webdings";
+    content: "";
 }
