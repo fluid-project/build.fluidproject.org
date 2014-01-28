@@ -41,12 +41,6 @@ div {
     background-size: 100% auto;
 }
 
-.flbuild-overlay {
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-}
-
 .flbuild-prefs-framework .flbuild-overlay {
     background-color: #F0DE00;
 }
@@ -60,8 +54,7 @@ div {
 }
 
 .flbuild-top-description {
-    position: relative;
-    top: -17.6em;
+    
 }
 
 .flbuild-top h2,
