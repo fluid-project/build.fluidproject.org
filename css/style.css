@@ -19,6 +19,8 @@ div {
 
 .flbuild-major-demo {
     height: 17em;
+    padding: 0;
+    margin-bottom: 1em;
 }
 
 .flbuild-prefs-framework {
@@ -59,13 +61,14 @@ div {
 
 .flbuild-top-description {
     position: relative;
-    top: -17em;
+    top: -17.6em;
 }
 
 .flbuild-top h2,
 .flbuild-top p,
 .flbuild-top a {
-    background-color: rgba(255,255,255,0.5);
+    background-color: #F6FBE9;
+    padding: 0.2em;
 }
 
 .flbuild-box {
