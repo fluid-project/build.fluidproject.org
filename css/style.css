@@ -66,9 +66,10 @@ div {
 
 .flbuild-top h2,
 .flbuild-top p,
-.flbuild-top a {
+.flbuild-top div.flbuild-blocklink {
     background-color: #F6FBE9;
-    padding: 0.2em;
+    padding: 0.4em;
+    display: inline-block;
 }
 
 .flbuild-box {
@@ -79,13 +80,15 @@ div {
 a {
     color: #000000;
     border-bottom: solid 2px #FFE57C;
+    display: inline-block;
+    line-height: 1;
 }
 
-div.flbuild-blocklink {
+.flbuild-bottom div.flbuild-blocklink {
     color: #FFFFFF;
     padding-left: 0;
 }
-.flbuild-blocklink a {
+.flbuild-bottom .flbuild-blocklink a {
     color: #FFFFFF;
     background-color: #000000;
     border-bottom: none;
