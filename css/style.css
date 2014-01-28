@@ -7,6 +7,10 @@ body {
 h1, h2 {
     font-family: 'Roboto Slab', serif;;
 }
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -52,7 +56,7 @@ div {
     background-color: #4AC39A;
 }
 
-.flbuild-top-description .col-sm-10 {
+.flbuild-top-description .flbuild-blocklinks {
     padding-left: 0;
 }
 
