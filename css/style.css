@@ -18,26 +18,22 @@ div {
 }
 
 .flbuild-major-demo {
-    height: 17em;
     padding: 0;
     margin-bottom: 1em;
 }
 
 .flbuild-prefs-framework {
-    background: url("../images/floe-uio.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/floe-uio.jpg") no-repeat, #f0de00;
     background-size: 100% auto;
 }
 
 .flbuild-video-player {
-    background: url("../images/floe-videoplayer.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/floe-videoplayer.jpg") no-repeat, #53a35e;
     background-size: 100% auto;
 }
 
 .flbuild-metadata-authoring {
-    background: url("../images/floe-metadata.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/floe-metadata.jpg") no-repeat, #4ac39a;
     background-size: 100% auto;
 }
 
