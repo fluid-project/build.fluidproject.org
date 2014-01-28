@@ -1,0 +1,19 @@
+body {
+    background-color: #F0F0F0;
+}
+
+h1, h2 {
+    font-family: monospace;
+}
+div {
+    padding: 1em;
+}
+
+.flbuild-box {
+    background-color: white;
+    margin: 1em;
+}
+a {
+    color: #000000;
+    border-bottom: solid 2px #FFE57C;
+}
