@@ -12,14 +12,31 @@ div {
 }
 
 .flbuild-major-demo {
-    height: 15em;
+    height: 17em;
+}
+
+.flbuild-prefs-framework {
+    background: url("../images/floe-uio.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.flbuild-video-player {
+    background: url("../images/floe-videoplayer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.flbuild-metadata-authoring {
+    background: url("../images/floe-metadata.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .flbuild-overlay {
     opacity: 0.5;
     width: 100%;
     height: 100%;
-    float: left;
 }
 
 .flbuild-prefs-framework .flbuild-overlay {
@@ -36,10 +53,14 @@ div {
 
 .flbuild-top-description {
     position: relative;
-    top: -15em;
-    background-color: rgba(255,255,255,0.5);
+    top: -17em;
 }
 
+.flbuild-top h2,
+.flbuild-top p,
+.flbuild-top a {
+    background-color: rgba(255,255,255,0.5);
+}
 
 .flbuild-box {
     background-color: white;
