@@ -1,0 +1,101 @@
+
+body {
+    background-color: #F0F0F0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;;
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+div {
+    padding: 1em;
+}
+
+.flbuild-major-demo {
+    padding: 0;
+    margin-bottom: 1em;
+}
+.flbuild-major-demo a {
+    font-weight: bold;
+}
+
+.flbuild-prefs-framework {
+    background: url("../images/floe-uio.jpg") no-repeat, #f0de00;
+    background-size: 100% auto;
+}
+
+.flbuild-video-player {
+    background: url("../images/floe-videoplayer.jpg") no-repeat, #53a35e;
+    background-size: 100% auto;
+}
+
+.flbuild-metadata-authoring {
+    background: url("../images/floe-metadata.jpg") no-repeat, #4ac39a;
+    background-size: 100% auto;
+}
+
+.flbuild-prefs-framework .flbuild-overlay {
+    background-color: #F0DE00;
+}
+
+.flbuild-video-player .flbuild-overlay {
+    background-color: #53A35E;
+}
+
+.flbuild-metadata-authoring .flbuild-overlay {
+    background-color: #4AC39A;
+}
+
+.flbuild-top-description .flbuild-blocklinks {
+    padding-left: 0;
+}
+
+.flbuild-top h2,
+.flbuild-top p,
+.flbuild-top div.flbuild-blocklink {
+    background-color: #F6FBE9;
+    padding: 0.4em;
+    display: inline-block;
+}
+.flbuild-top div.flbuild-blocklink {
+    margin-bottom: 0.3em;    
+}
+
+.flbuild-box {
+    background-color: white;
+    margin: 1em;
+}
+
+a {
+    color: #000000;
+    border-bottom: solid 2px #FFE57C;
+    display: inline-block;
+    line-height: 1;
+}
+
+.flbuild-blocklinks {
+    padding: 0;    
+}
+.flbuild-top div.flbuild-blocklinks {
+    display: inline-block;
+}
+.flbuild-bottom div.flbuild-blocklink {
+    padding: 0.5em 0;
+    color: #FFFFFF;
+}
+.flbuild-bottom .flbuild-blocklink a {
+    color: #FFFFFF;
+    background-color: #000000;
+    border-bottom: none;
+    padding: 0.5em;
+}
