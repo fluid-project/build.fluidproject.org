@@ -1,101 +1,245 @@
-
 body {
-    background-color: #F0F0F0;
-    font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  font-size: 14px;
+}
+@font-face {
+  font-family: 'fluid-star';
+  src: url("../fonts/fluid-star.eot?#iefix") format('embedded-opentype'), url("../fonts/fluid-star.eot"), url("../fonts/fluid-star.ttf");
+}
+@font-face {
+  font-family: 'fluid-community';
+  src: url("../fonts/fluid-community.eot?#iefix") format('embedded-opentype'), url("../fonts/fluid-community.eot"), url("../fonts/fluid-community.ttf");
+}
+.fluid-web {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  padding: 0 1rem;
+/* Links that appear within text content. */
+/* Read more Link */
+}
+.fluid-web .row {
+  max-width: 66rem;
+}
+.fluid-web h1,
+.fluid-web h2,
+.fluid-web h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+.fluid-web h1 {
+  font-size: 4.75rem;
+  font-weight: bolder;
+}
+.fluid-web h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.fluid-web p {
+  margin-bottom: 0.8rem;
+}
+.fluid-web a:hover {
+  color: #009fcb;
+}
+.fluid-web a:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web .columns {
+  padding: 0.5rem;
+}
+.fluid-web .fluid-web-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.fluid-web .fluid-web-section-gap {
+  margin-top: 5rem;
+}
+.fluid-web .fluid-web-emphasized-text {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 1.6rem !important;
+  color: #333 !important;
+}
+.fluid-web .fluid-web-deemphasized-text {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #808080;
+}
+.fluid-web .fluid-web-link-content {
+  color: #009fcb;
+}
+.fluid-web .fluid-web-link-header:hover {
+  border-bottom: 0.2rem solid #fc0;
+}
+.fluid-web .fluid-web-link-content:hover {
+  text-decoration: underline;
+}
+.fluid-web .fluid-web-link-readmore {
+  font-weight: bold;
+  border-bottom: 0.2rem solid #009fcb;
+  color: #333;
+}
+.fluid-web .fluid-web-external-link:before {
+  font-family: 'fluid-community';
+  content: '\e607';
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 0.3rem;
+}
+.fluid-web .fluid-web-list {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 0.2rem;
+}
+.fluid-web .fluid-web-list h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+}
+.fluid-web .fluid-web-list ul {
+  list-style: none;
+}
+.fluid-web .fluid-web-list li,
+.fluid-web .fluid-web-list dl dt {
+  margin-top: 0.8rem;
+}
+.fluid-web .fluid-web-list dl dd {
+  margin-bottom: 1rem;
+}
+/* Header and Navigation */
+.fluid-web .fluid-web-header {
+  margin-bottom: 2rem;
+}
+.fluid-web .fluid-web-header header {
+  padding: 0;
+}
+.fluid-web .fluid-web-header .fluid-web-skip-links {
+  height: 3.5rem;
+  padding-top: 1rem;
+}
+.fluid-web .fluid-web-header .fluid-web-skip-links a {
+  position: relative;
+  left: -100rem;
+}
+.fluid-web .fluid-web-header .fluid-web-skip-links a:focus {
+  left: 1rem;
+  background-color: #333;
+  padding: 0.5rem;
+  color: #fff;
+  border: 0.2rem solid #fc0;
+  outline: 0.2rem solid #333;
+  position: absolute;
+}
+.fluid-web .fluid-web-header .fluid-web-skip-links a:hover {
+  color: #009fcb;
+}
+.fluid-web .fluid-web-header h1 a {
+  color: #333;
+}
+.fluid-web .fluid-web-header h1 a:hover {
+  color: #009fcb;
+}
+.fluid-web .fluid-web-header h1 a:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web .fluid-web-logo-star:before {
+  content: '\e600';
+  font-family: 'fluid-star';
+}
+.fluid-web .fluid-web-header .fluid-web-logo-star:before {
+  font-size: 3.5rem;
 }
 
-h1, h2 {
-    font-family: 'Roboto Slab', serif;;
+/* Community links section */
+.fluid-web .fluid-web-community-list {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: initial;
 }
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 0;
+.fluid-web .fluid-web-community-list li a {
+  margin: 5rem 0 1rem 0;
+  width: 7rem;
+  display: block;
+  position: relative;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  border: none;
 }
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
+.fluid-web .fluid-web-community-list li .fluid-web-community-icon:before {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50rem;
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+  font-family: 'fluid-community';
+  font-size: 2.5rem;
+  line-height: 5rem;
+  background-color: #fff;
+  box-shadow: -0.03rem -0.07rem #dfdfdf;
 }
-
-div {
-    padding: 1em;
-}
-
-.flbuild-major-demo {
-    padding: 0;
-    margin-bottom: 1em;
-}
-.flbuild-major-demo a {
-    font-weight: bold;
-}
-
-.flbuild-prefs-framework {
-    background: url("../images/floe-uio.jpg") no-repeat, #f0de00;
-    background-size: 100% auto;
-}
-
-.flbuild-video-player {
-    background: url("../images/floe-videoplayer.jpg") no-repeat, #53a35e;
-    background-size: 100% auto;
-}
-
-.flbuild-metadata-authoring {
-    background: url("../images/floe-metadata.jpg") no-repeat, #4ac39a;
-    background-size: 100% auto;
+.fluid-web .fluid-web-community-list li a:focus .fluid-web-community-icon:before,
+.fluid-web .fluid-web-community-list li a:hover .fluid-web-community-icon:before {
+  text-shadow: 0.01rem 0.01rem 0.1rem #afafaf;
 }
 
-.flbuild-prefs-framework .flbuild-overlay {
-    background-color: #F0DE00;
+.fluid-web .fluid-web-community .fluid-web-community-list .fluid-web-logo-star:before {
+  font-family: 'fluid-star';
+  /* Fluid star is in a different font file. Therefore we have a special rule just for the Star community link icon.*/
+}
+.fluid-web .fluid-web-community-irc:before {
+  content: '\e604';
+}
+.fluid-web .fluid-web-community-source:before {
+  content: '\e601';
+}
+.fluid-web .fluid-web-community-bugs:before {
+  content: '\e605';
+}
+.fluid-web .fluid-web-community-mailinglist:before {
+  content: '\e603';
+}
+.fluid-web .fluid-web-community-list li a:focus {
+  outline: 0.2rem solid #fc0;
+}
+.fluid-web .fluid-web-community-list li a:focus,
+.fluid-web .fluid-web-community-list li a:hover {
+  color: #009fcb;
 }
 
-.flbuild-video-player .flbuild-overlay {
-    background-color: #53A35E;
+/* Footer */
+.fluid-web .fluid-web-footer {
+  padding: 3rem;
+  background-color: #363636;
+  color: #fff;
+  margin-top: rem;
 }
-
-.flbuild-metadata-authoring .flbuild-overlay {
-    background-color: #4AC39A;
+.fluid-web .fluid-web-footer abbr {
+  color: #fff;
 }
-
-.flbuild-top-description .flbuild-blocklinks {
-    padding-left: 0;
+.fluid-web .fluid-web-footer a {
+  color: #fc0;
+  border: none;
 }
-
-.flbuild-top h2,
-.flbuild-top p,
-.flbuild-top div.flbuild-blocklink {
-    background-color: #F6FBE9;
-    padding: 0.4em;
-    display: inline-block;
+.fluid-web .fluid-web-footer a:hover {
+  text-decoration: underline;
 }
-.flbuild-top div.flbuild-blocklink {
-    margin-bottom: 0.3em;    
+.fluid-web .fluid-web-footer a:active {
+  background-color: #fc0;
+  color: #363636;
 }
-
-.flbuild-box {
-    background-color: white;
-    margin: 1em;
+.fluid-web .fluid-web-footer a:focus {
+  outline: 0.2rem solid #fc0;
 }
-
-a {
-    color: #000000;
-    border-bottom: solid 2px #FFE57C;
-    display: inline-block;
-    line-height: 1;
+.fluid-web .fluid-web-footer p {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
 }
-
-.flbuild-blocklinks {
-    padding: 0;    
+.fluid-web .fluid-web-footer .fluid-web-projectCoordinator-list {
+  font-size: 0.8rem;
 }
-.flbuild-top div.flbuild-blocklinks {
-    display: inline-block;
-}
-.flbuild-bottom div.flbuild-blocklink {
-    padding: 0.5em 0;
-    color: #FFFFFF;
-}
-.flbuild-bottom .flbuild-blocklink a {
-    color: #FFFFFF;
-    background-color: #000000;
-    border-bottom: none;
-    padding: 0.5em;
+.fluid-web .fluid-web-footer .fluid-web-projectCoordinator-list dt {
+  margin-bottom: 0rem;
+  display: inline;
 }
