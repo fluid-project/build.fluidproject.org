@@ -3,10 +3,6 @@ body {
     font-size: 14px;
 }
 @font-face {
-    font-family: 'fluid-star';
-    src: url("../fonts/fluid-star.eot?#iefix") format('embedded-opentype'), url("../fonts/fluid-star.eot"), url("../fonts/fluid-star.ttf");
-}
-@font-face {
     font-family: 'fluid-community';
     src: url("../fonts/fluid-community.eot?#iefix") format('embedded-opentype'), url("../fonts/fluid-community.eot"), url("../fonts/fluid-community.ttf");
 }
@@ -78,7 +74,7 @@ body {
 }
 .fluid-build .fluid-build-external-link:before {
     font-family: 'fluid-community';
-    content: '\e607';
+    content: '\e608';
     font-size: 0.8rem;
     font-weight: normal;
     margin-left: 0.3rem;
@@ -139,11 +135,27 @@ body {
     outline: 0.2rem solid #fc0;
 }
 .fluid-build .fluid-build-logo-star:before {
-    content: '\e600';
-    font-family: 'fluid-star';
+    content: '\e607';
+    font-family: 'fluid-community';
 }
 .fluid-build .fluid-build-header .fluid-build-logo-star:before {
     font-size: 3.5rem;
+}
+
+.fluid-build .fluid-build-mail-icon:before{
+    font-family: 'fluid-community';
+    content: '\e603';
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-left: 0.3rem;
+}
+
+.fluid-build .fluid-build-map-icon:before{
+    font-family: 'fluid-community';
+    content: '\e609';
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-left: 0.3rem;
 }
 
 .fluid-build .fluid-build-disclaimer {
@@ -186,10 +198,6 @@ body {
     text-shadow: 0.01rem 0.01rem 0.1rem #afafaf;
 }
 
-.fluid-build .fluid-build-community-list .fluid-build-logo-star:before {
-    font-family: 'fluid-star';
-    /* Fluid star is in a different font file. Therefore we have a special rule just for the Star community link icon.*/
-}
 .fluid-build .fluid-build-community-irc:before {
     content: '\e604';
 }
