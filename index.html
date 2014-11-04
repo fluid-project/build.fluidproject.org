@@ -5,17 +5,53 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <!-- Styles -->
         <link  rel="stylesheet" href="./lib/foundation/css/foundation.css" />
+        <link rel="stylesheet" href="lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" href="lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" href="lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
         <link  rel="stylesheet" href="./css/style.css" />
         <link  rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100" />
         <link  rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" />
 
         <!-- Scripts -->
         <link rel="icon" type="image/png" href="./images/favicon.png">
+        <script type="text/javascript" src="lib/infusion/infusion-custom.js"></script>
 
         <title>Nightly Builds | Fluid</title>
     </head>
 
     <body>
+        <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel">
+            <!-- This is the div that will contain the Preference Editor component -->
+            <div class="flc-slidingPanel-panel flc-prefsEditor-iframe"></div>
+            <!-- This div is for the sliding panel that shows and hides the Preference Editor controls -->
+            <div class="fl-panelBar">
+                <span class="fl-prefsEditor-buttons">
+                    <button id="reset" class="flc-prefsEditor-reset fl-prefsEditor-reset"><span class="fl-icon-undo"></span> Reset</button>
+                    <button id="show-hide" class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide"> Show/Hide</button>
+                </span>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+                    "templatePrefix": "lib/infusion/src/framework/preferences/html/",
+                    "messagePrefix": "lib/infusion/src/framework/preferences/messages/",
+                    "tocTemplate": "lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+                    components: {
+                        prefsEditorLoader: {
+                            options: {
+                                iframeRenderer: {
+                                    markupProps: {
+                                        src: "SeparatedPanelPrefsEditorFrame.html"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
         <div class="fluid-build">
             <div class="row fluid-build-header">
                 <header class="small-12 medium-6 columns">
@@ -25,6 +61,8 @@
                     <h1><a href="http://www.fluidproject.org/"><span class="fluid-build-logo-star" role="presentation"></span>fluid</a></h1>
                 </header>
             </div>
+
+            <div class="flc-toc-tocContainer"> </div>
 
             <a name="fluid-build-content"></a>
 
