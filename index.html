@@ -18,185 +18,140 @@
     <body>
         <div class="fluid-build">
             <div class="row fluid-build-header">
-                <header class="small-12 medium-6 columns">
-                    <div class="fluid-build-skip-links">
-                        <a href="#fluid-build-content">Skip to Content</a>
-                    </div>
-                    <h1><a href="http://www.fluidproject.org/"><span class="fluid-build-logo-star" role="presentation"></span>fluid</a></h1>
+                <header class="small-12 columns">
+                    <h1><span class="fluid-build-logo-star" role="presentation"></span>fluid <span class="subheader">build site</span></h1>
                 </header>
+
+                <div class="columns small-12 fluid-build-disclaimer">
+                    This is a listing of all Fluid demos and tests built nightly from the Fluid github repositories. Since these are nightly builds, there may be bugs.
+                </div>
+
+                <section class="columns small-12">
+                    <h2 class="fluid-build-deemphasized-text">Community links</h2>
+
+                    <div class="text-center fluid-build-community">
+                        <ul class="inline-list fluid-build-community-list">
+                            <li><a href="http://www.fluidproject.org/"><span class="fluid-build-community-icon fluid-build-logo-star" role="presentation"></span>project website</a></li>
+                            <li><a href="http://wiki.fluidproject.org/display/fluid/IRC+Channel"><span class="fluid-build-community-icon fluid-build-community-irc" role="presentation"></span>irc chat</a></li>
+                            <li><a href="http://issues.fluidproject.org"><span class="fluid-build-community-icon fluid-build-community-bugs" role="presentation"></span>bug tracking</a></li>
+                            <li><a href="http://github.com/fluid-project"><span class="fluid-build-community-icon fluid-build-community-source" role="presentation"></span>source code</a></li>
+                            <li><a href="http://wiki.fluidproject.org/display/fluid/Mailing+Lists"><span class="fluid-build-community-icon fluid-build-community-mailinglist" role="presentation"></span>mailing list</a></li>
+                        </ul>
+                    </div>
+                </section>
             </div>
 
-            <a name="fluid-build-content"></a>
+            <main>
 
-            <section aria-labelledby="fluid-build-01">
-                <div class="row">
-                    <div class="columns small-12 fluid-build-disclaimer">
-                        <h2 id="fluid-build-01">Fluid Nightly Builds</h2>
-                        <p>This is a listing of all Fluid demos and tests built nightly from the Fluid github repositories. Since these are nightly builds, there may be bugs.</p>
-                        <p class="text-center">
-                            Jump to: <strong><a href="#demos">Demos</a></strong>, <strong><a href="#tests">Tests</a></strong>, <strong><a href="#community">Community Links</a></strong>
-                        </p>
-                    </div>
+                <div class="row fluid-build-list">
+                    <section class="small-12 medium-6 columns">
+                        <h2>Demos</h2>
 
+                        <h3>Preferences framework</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/prefsFramework/">Preferences framework demo - "Climate Change"</a></li>
+                            <li><a href="http://build.fluidproject.org/explorationTool">Preferences exploration tool demo - "Electrons"</a></li>
+                        </ul>
 
+                        <h3>Video player</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/videoPlayer/demos/Mammals.html">Video player demo - "What is a Mammal?"</a></li>
+                        </ul>
+
+                        <h3>Metadata</h3>
+                        <ul>
+                            <li><a href="http://metadata.floeproject.org/demos/metadata/index.html">Metadata authoring tool demo</a></li>
+                            <li><a href="http://metadata.floeproject.org/demos/feedback/index.html">Metadata feedback tool demo</a></li>
+                        </ul>
+
+                        <h3>Infusion js Framework</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/renderer/">Renderer demo</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/keyboard-a11y/">Keyboard Accessibility Plugin demo</a></li>
+                        </ul>
+
+                        <h3>Infusion Components</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/inlineEdit/">Inline edit demo</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/overviewPanel/">Overview panel demo</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/pager/">Pager demo</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/progress/">Progress demo</a></li>
+                            <li> Reorderer
+                                <ul>
+                                    <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/gridReorderer/">Grid reorderer demo</a></li>
+                                    <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/imageReorderer/">Image reorderer demo</a></li>
+                                    <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/layoutReorderer/">Layout reorderer demo</a></li>
+                                    <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/listReorderer/">List reorderer demo</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/tableOfContents/">Table of contents demo</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/uiOptions/">UI options demo</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/demos/uploader/">Uploader demo</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="small-12 medium-6 columns">
+                        <h2>Tests</h2>
+
+                        <h3>All automated tests</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/all-tests.html">Run all automated tests</a></li>
+                        </ul>
+
+                        <h3>Framework Tests</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/core/all-tests.html">Core - All tests</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/enhancement/html/ProgressiveEnhancement-test.html">Progressive enhancement test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/jqUnit/html/jqUnit-tests.html">jqUnit test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/preferences/all-tests.html">All tests</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/renderer/html/Renderer-test.html">Renderer test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/renderer/html/RendererUtilities-test.html">Renderer utilities test</a></li>
+                        </ul>
+
+                        <h3>Manual Tests</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/components/inlineEdit/dropdown/">Drop-down inline edit</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/components/inlineEdit/rich/">Rich text inline edit</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/components/reorderer/dynamic/">Dynamic reorderer</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/core/multipleVersions/">Multiple versions of Infusion</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/core/performance-fastInvokers/">Performance test - fast invokers</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/core/performance-get/">Performance test - fluid.get</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/preferences/assortedContent/">Preferences editor: assorted content</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/preferences/fullPage/">Preferences editor: full page</a></li>
+                        <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/preferences/fullPage-schema/">Preferences editor: full page schema</a></li>
+                        </ul>
+
+                        <h3>Component Tests</h3>
+                        <ul>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/inlineEdit/html/InlineEdit-test.html">Inline edit test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/overviewPanel/html/OverviewPanel-test.html">Overview panel test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/pager/html/PagedTable-test.html">Paged table test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/pager/html/Pager-test.html">Pager test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/progress/html/Progress-test.html">Progress test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/reorderer/all-tests.html">Reorderer - All tests</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/slidingPanel/html/SlidingPanel-test.html">Sliding panel test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/tableOfContents/html/TableOfContents-test.html">Table of contents test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/tabs/html/Tabs-test.html">Tabs test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/textfieldSlider/html/TextfieldSlider-test.html">Text field slider test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/tooltip/html/Tooltip-test.html">Tooltip test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/uiOptions/html/UIOptions-test.html">UI options test</a></li>
+                            <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/uploader/all-tests.html">Uploader all tests</a></li>
+                        </ul>
+                    </section>
                 </div>
-
-                <div class="row">
-                    <div class="small-12 columns">
-                        <a name="demos">
-                        <h2 class="fluid-build-deemphasized-text">Demos</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="medium-6 columns">
-                        <div class="fluid-build-list">
-                            <h3>Preferences framework</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/prefsFramework/">Preferences framework demo - "Climate Change"</a></li>
-                                <li><a href="http://build.fluidproject.org/explorationTool">Preferences exploration tool demo - "Electrons"</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="fluid-build-list">
-                            <h3>Video player</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/videoPlayer/demos/Mammals.html">Video player demo - "What is a Mammal?"</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="fluid-build-list">
-                            <h3>Metadata</h3>
-                            <ul>
-                                <li><a href="http://metadata.floeproject.org/demos/metadata/index.html">Metadata authoring tool demo</a></li>
-                                <li><a href="http://metadata.floeproject.org/demos/feedback/index.html">Metadata feedback tool demo</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="fluid-build-list">
-                            <h3>Infusion js Framework</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/renderer/">Renderer demo</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/keyboard-a11y/">Keyboard Accessibility Plugin demo</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="medium-6 columns">
-                        <div class="fluid-build-list">
-                            <h3>Infusion Components</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/inlineEdit/">Inline edit demo</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/overviewPanel/">Overview panel demo</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/pager/">Pager demo</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/progress/">Progress demo</a></li>
-                                <li> Reorderer
-                                    <ul>
-                                        <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/gridReorderer/">Grid reorderer demo</a></li>
-                                        <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/imageReorderer/">Image reorderer demo</a></li>
-                                        <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/layoutReorderer/">Layout reorderer demo</a></li>
-                                        <li><a href="http://build.fluidproject.org/infusion/demos/reorderer/listReorderer/">List reorderer demo</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/tableOfContents/">Table of contents demo</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/uiOptions/">UI options demo</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/demos/uploader/">Uploader demo</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="small-12 columns">
-                        <a name="tests">
-                        <h2 class="fluid-build-section-gap fluid-build-deemphasized-text">Tests</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="medium-6 columns">
-                        <div class="fluid-build-list">
-                            <h3>All automated tests</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/all-tests.html">Run all automated tests</a></li>
-                            </ul>
-
-                            <h3>Framework Tests</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/core/all-tests.html">Core - All tests</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/enhancement/html/ProgressiveEnhancement-test.html">Progressive enhancement test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/jqUnit/html/jqUnit-tests.html">jqUnit test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/preferences/all-tests.html">All tests</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/renderer/html/Renderer-test.html">Renderer test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/framework-tests/renderer/html/RendererUtilities-test.html">Renderer utilities test</a></li>
-                            </ul>
-
-                            <h3>Manual Tests</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/components/inlineEdit/dropdown/">Drop-down inline edit</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/components/inlineEdit/rich/">Rich text inline edit</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/components/reorderer/dynamic/">Dynamic reorderer</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/core/multipleVersions/">Multiple versions of Infusion</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/core/performance-fastInvokers/">Performance test - fast invokers</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/core/performance-get/">Performance test - fluid.get</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/preferences/assortedContent/">Preferences editor: assorted content</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/preferences/fullPage/">Preferences editor: full page</a></li>
-                            <li><a href="http://build.fluidproject.org/infusion/tests/manual-tests/framework/preferences/fullPage-schema/">Preferences editor: full page schema</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="medium-6 columns">
-                        <div class="fluid-build-list">
-                            <h3>Component Tests</h3>
-                            <ul>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/inlineEdit/html/InlineEdit-test.html">Inline edit test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/overviewPanel/html/OverviewPanel-test.html">Overview panel test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/pager/html/PagedTable-test.html">Paged table test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/pager/html/Pager-test.html">Pager test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/progress/html/Progress-test.html">Progress test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/reorderer/all-tests.html">Reorderer - All tests</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/slidingPanel/html/SlidingPanel-test.html">Sliding panel test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/tableOfContents/html/TableOfContents-test.html">Table of contents test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/tabs/html/Tabs-test.html">Tabs test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/textfieldSlider/html/TextfieldSlider-test.html">Text field slider test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/tooltip/html/Tooltip-test.html">Tooltip test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/uiOptions/html/UIOptions-test.html">UI options test</a></li>
-                                <li><a href="http://build.fluidproject.org/infusion/tests/component-tests/uploader/all-tests.html">Uploader all tests</a></li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="columns small-12">
-                        <a name="community">
-                        <h2 class="fluid-build-deemphasized-text">Community links</h2>
-
-                        <div class="text-center fluid-build-community">
-                            <ul class="inline-list fluid-build-community-list">
-                                <li><a href="http://www.fluidproject.org/"><span class="fluid-build-community-icon fluid-build-logo-star" role="presentation"></span>project website</a></li>
-                                <li><a href="http://wiki.fluidproject.org/display/fluid/IRC+Channel"><span class="fluid-build-community-icon fluid-build-community-irc" role="presentation"></span>irc chat</a></li>
-                                <li><a href="http://issues.fluidproject.org"><span class="fluid-build-community-icon fluid-build-community-bugs" role="presentation"></span>bug tracking</a></li>
-                                <li><a href="http://github.com/fluid-project"><span class="fluid-build-community-icon fluid-build-community-source" role="presentation"></span>source code</a></li>
-                                <li><a href="http://wiki.fluidproject.org/display/fluid/Mailing+Lists"><span class="fluid-build-community-icon fluid-build-community-mailinglist" role="presentation"></span>mailing list</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </main>
 
             <h2 class="row fluid-build-deemphasized-text fluid-build-section-gap">Contact Us</h2>
             <footer class="row fluid-build-footer">
                 <div class="medium-6 columns">
                     <p>Fluid is a project of the <a href="http://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at <a href="http://www.ocadu.ca">OCAD University</a>, funded by a grant from <a href="http://www.mellon.org/">The Andrew W. Mellon Foundation</a>.</p>
-                    <p>
+                    <address>
+                        Inclusive Design Research Centre<br/>
                         <a href="https://www.google.com/maps/place/205+Richmond+St+W/@43.6493603,-79.3901121,17z/">205 Richmond St. W. 2nd Floor <span class="fluid-build-map-icon" role="presentation"></span></a><br/>
                         Toronto, ON Canada M5V 1V3<br/>
                         <abbr title="Phone number">T.</abbr> 416-977-6000 #3968 <br/>
                         <abbr title="Fax">F.</abbr> 416-977-9844
-                    </p>
+                    </address>
                 </div>
 
                 <div class="medium-6 columns">

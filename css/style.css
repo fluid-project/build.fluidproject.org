@@ -48,36 +48,10 @@ body {
 .fluid-build .fluid-build-section-gap {
     margin-top: 5rem;
 }
-.fluid-build .fluid-build-emphasized-text {
-    font-family: 'Roboto Slab', serif !important;
-    font-size: 1.6rem !important;
-    color: #333 !important;
-}
 .fluid-build .fluid-build-deemphasized-text {
     font-size: 1em;
     text-transform: uppercase;
     color: #808080;
-}
-.fluid-build .fluid-build-link-content {
-    color: #009fcb;
-}
-.fluid-build .fluid-build-link-header:hover {
-    border-bottom: 0.2rem solid #fc0;
-}
-.fluid-build .fluid-build-link-content:hover {
-    text-decoration: underline;
-}
-.fluid-build .fluid-build-link-readmore {
-    font-weight: bold;
-    border-bottom: 0.2rem solid #009fcb;
-    color: #333;
-}
-.fluid-build .fluid-build-external-link:before {
-    font-family: 'fluid-community';
-    content: '\e608';
-    font-size: 0.8rem;
-    font-weight: normal;
-    margin-left: 0.3rem;
 }
 .fluid-build .fluid-build-list {
     background: #fff;
@@ -105,35 +79,6 @@ body {
 .fluid-build header {
     padding: 0;
 }
-.fluid-build .fluid-build-skip-links {
-    height: 3.5rem;
-    padding-top: 1rem;
-}
-.fluid-build .fluid-build-skip-links a {
-    position: relative;
-    left: -100rem;
-}
-.fluid-build .fluid-build-skip-links a:focus {
-    left: 1rem;
-    background-color: #333;
-    padding: 0.5rem;
-    color: #fff;
-    border: 0.2rem solid #fc0;
-    outline: 0.2rem solid #333;
-    position: absolute;
-}
-.fluid-build .fluid-build-skip-links a:hover {
-    color: #009fcb;
-}
-.fluid-build .fluid-build-header h1 a {
-    color: #333;
-}
-.fluid-build .fluid-build-header h1 a:hover {
-    color: #009fcb;
-}
-.fluid-build .fluid-build-header h1 a:focus {
-    outline: 0.2rem solid #fc0;
-}
 .fluid-build .fluid-build-logo-star:before {
     content: '\e607';
     font-family: 'fluid-community';
@@ -159,7 +104,10 @@ body {
 }
 
 .fluid-build .fluid-build-disclaimer {
-    background-color: #e6e6e6;
+    background-color: #fff;
+    font-size: 1.2rem;
+    padding: 1.4rem;
+    line-height: 1.8;
 }
 
 /* Community links section */
