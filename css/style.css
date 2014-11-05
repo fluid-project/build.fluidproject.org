@@ -2,6 +2,9 @@ body {
     background-color: #f2f2f2;
     font-size: 14px;
 }
+p, ul { /* override foundation's line-heights, which interfere with UIO */
+    line-height: inherit;
+}
 @font-face {
     font-family: 'fluid-community';
     src: url("../fonts/fluid-community.eot?#iefix") format('embedded-opentype'), url("../fonts/fluid-community.eot"), url("../fonts/fluid-community.ttf");
@@ -137,7 +140,7 @@ body {
     left: 1rem;
     font-family: 'fluid-community';
     font-size: 2.5rem;
-    line-height: 5rem;
+    line-height: 2;
     background-color: #fff;
     box-shadow: -0.03rem -0.07rem #dfdfdf;
 }
@@ -157,9 +160,6 @@ body {
 }
 .fluid-build .fluid-build-community-mailinglist:before {
     content: '\e603';
-}
-.fluid-build .fluid-build-community-list li a:focus {
-    outline: 0.2rem solid #fc0;
 }
 .fluid-build .fluid-build-community-list li a:focus,
 .fluid-build .fluid-build-community-list li a:hover {
@@ -200,4 +200,65 @@ body {
 .fluid-build .fluid-build-projectCoordinator-list dt {
     margin-bottom: 0rem;
     display: inline;
+}
+/* make UIO buttons' entire visible area clickable */
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide,
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-reset {
+    margin-bottom: 0;
+    height: inherit;
+}
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
+.fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
+    outline: 0.2rem solid #fc0;
+}
+
+/* high-contrast styles */
+.fl-theme-yb .fluid-build .fluid-build-list,
+.fl-theme-yb .fluid-build .fluid-build-footer {
+    border: 1px solid #FFFF00;
+}
+.fl-theme-wb .fluid-build .fluid-build-list,
+.fl-theme-wb .fluid-build .fluid-build-footer {
+    border: 1px solid #FFFFFF;
+}
+.fl-theme-bw .fluid-build .fluid-build-list,
+.fl-theme-by .fluid-build .fluid-build-list,
+.fl-theme-bw .fluid-build .fluid-build-footer,
+.fl-theme-by .fluid-build .fluid-build-footer {
+    border: 1px solid #000000;
+}
+.fl-theme-lgdg .fluid-build .fluid-build-list,
+.fl-theme-lgdg .fluid-build .fluid-build-footer {
+    border: 1px solid #bdbdbb;
+}
+.fl-theme-bw .fluid-build .fluid-build-community-icon:before,
+.fl-theme-wb .fluid-build .fluid-build-community-icon:before,
+.fl-theme-by .fluid-build .fluid-build-community-icon:before,
+.fl-theme-yb .fluid-build .fluid-build-community-icon:before,
+.fl-theme-lgdg .fluid-build .fluid-build-community-icon:before {
+    background-color: inherit;
+    box-shadow: none;
+}
+.fl-theme-yb .fluid-build a:focus,
+.fl-theme-yb .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
+.fl-theme-yb .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
+    outline: 0.2rem solid #FFFF00;
+}
+.fl-theme-wb .fluid-build a:focus,
+.fl-theme-wb .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
+.fl-theme-wb .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
+    outline: 0.2rem solid #FFFFFF;
+}
+.fl-theme-bw .fluid-build a:focus,
+.fl-theme-by .fluid-build a:focus,
+.fl-theme-bw .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
+.fl-theme-bw .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus,
+.fl-theme-by .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
+.fl-theme-by .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
+    outline: 0.2rem solid #000000;
+}
+.fl-theme-lgdg .fluid-build a:focus,
+.fl-theme-lgdg .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
+.fl-theme-lgdg .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
+    outline: 0.2rem solid #bdbdbb;
 }
