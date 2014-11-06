@@ -7,7 +7,8 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
 }
 @font-face {
     font-family: 'fluid-community';
-    src: url("../fonts/fluid-community.eot?#iefix") format('embedded-opentype'), url("../fonts/fluid-community.eot"), url("../fonts/fluid-community.ttf");
+    src: url("../fonts/fluid-community.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/fluid-community.eot"), url("../fonts/fluid-community.ttf");
 }
 .fluid-build {
     font-family: 'Open Sans', sans-serif;
@@ -110,7 +111,6 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
     background-color: #fff;
     font-size: 1.2rem;
     padding: 1.4rem;
-    line-height: 1.8;
 }
 
 /* Community links section */
@@ -237,6 +237,19 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
 .fl-theme-lgdg .fluid-build .fluid-build-community-icon:before {
     background-color: inherit;
     box-shadow: none;
+}
+
+.fl-theme-bw .fluid-build .fluid-build-community-list a:focus .fluid-build-community-icon:before,
+.fl-theme-wb .fluid-build .fluid-build-community-list a:focus .fluid-build-community-icon:before,
+.fl-theme-by .fluid-build .fluid-build-community-list a:focus .fluid-build-community-icon:before,
+.fl-theme-yb .fluid-build .fluid-build-community-list a:focus .fluid-build-community-icon:before,
+.fl-theme-lgdg .fluid-build .fluid-build-community-list a:focus .fluid-build-community-icon:before,
+.fl-theme-bw .fluid-build .fluid-build-community-list a:hover .fluid-build-community-icon:before,
+.fl-theme-wb .fluid-build .fluid-build-community-list a:hover .fluid-build-community-icon:before,
+.fl-theme-by .fluid-build .fluid-build-community-list a:hover .fluid-build-community-icon:before,
+.fl-theme-yb.fluid-build .fluid-build-community-list a:hover .fluid-build-community-icon:before,
+.fl-theme-lgdg .fluid-build .fluid-build-community-list a:hover .fluid-build-community-icon:before {
+    text-shadow: inherit;
 }
 .fl-theme-yb .fluid-build a:focus,
 .fl-theme-yb .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
