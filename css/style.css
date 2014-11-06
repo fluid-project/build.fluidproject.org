@@ -251,16 +251,20 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
 .fl-theme-lgdg .fluid-build .fluid-build-community-list a:hover .fluid-build-community-icon:before {
     text-shadow: inherit;
 }
+.fl-theme-yb .fluid-build a:hover,
 .fl-theme-yb .fluid-build a:focus,
 .fl-theme-yb .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
 .fl-theme-yb .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
     outline: 0.2rem solid #FFFF00;
 }
+.fl-theme-wb .fluid-build a:hover,
 .fl-theme-wb .fluid-build a:focus,
 .fl-theme-wb .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
 .fl-theme-wb .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
     outline: 0.2rem solid #FFFFFF;
 }
+.fl-theme-bw .fluid-build a:hover,
+.fl-theme-by .fluid-build a:hover,
 .fl-theme-bw .fluid-build a:focus,
 .fl-theme-by .fluid-build a:focus,
 .fl-theme-bw .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
@@ -269,8 +273,37 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
 .fl-theme-by .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
     outline: 0.2rem solid #000000;
 }
+.fl-theme-lgdg .fluid-build a:hover,
 .fl-theme-lgdg .fluid-build a:focus,
 .fl-theme-lgdg .fl-prefsEditor-separatedPanel .fl-prefsEditor-showHide:focus,
 .fl-theme-lgdg .fl-prefsEditor-separatedPanel .fl-prefsEditor-reset:focus {
     outline: 0.2rem solid #bdbdbb;
+}
+
+/* The UIO buttons need styling for contrast themes */
+
+.fl-theme-bw .fl-prefsEditor-separatedPanel .fl-prefsEditor-buttons,
+.fl-theme-by .fl-prefsEditor-separatedPanel .fl-prefsEditor-buttons {
+    box-shadow: inherit;
+    border-left: 0.2rem solid #000;
+    border-right: 0.2rem solid #000;
+    border-bottom: 0.2rem solid #000;
+}
+.fl-theme-lgdg .fl-prefsEditor-separatedPanel .fl-prefsEditor-buttons{
+    box-shadow: inherit;
+    border-left: 0.2rem solid #bdbdbb;
+    border-right: 0.2rem solid #bdbdbb;
+    border-bottom: 0.2rem solid #bdbdbb;
+}
+.fl-theme-wb .fl-prefsEditor-separatedPanel .fl-prefsEditor-buttons{
+    box-shadow: inherit;
+    border-left: 0.2rem solid #fff;
+    border-right: 0.2rem solid #fff;
+    border-bottom: 0.2rem solid #fff;
+}
+.fl-theme-yb .fl-prefsEditor-separatedPanel .fl-prefsEditor-buttons{
+    box-shadow: inherit;
+    border-left: 0.2rem solid #FFFF00;
+    border-right: 0.2rem solid #FFFF00;
+    border-bottom: 0.2rem solid #FFFF00;
 }
