@@ -20,7 +20,10 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
 }
 .fluid-build h1,
 .fluid-build h2,
-.fluid-build h3 {
+.fluid-build h3,
+.fluid-build h4,
+.fluid-build h5,
+.fluid-build h6 {
     font-family: 'Open Sans', sans-serif;
     color: #333;
 }
@@ -30,6 +33,10 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
 }
 .fluid-build h3 {
     font-size: 1.4rem;
+    font-weight: bold;
+}
+.fluid-build h4 {
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .fluid-build p {
@@ -62,7 +69,8 @@ p, ul { /* override foundation's line-heights, which interfere with UIO */
     padding: 1rem;
     margin-top: 0.2rem;
 }
-.fluid-build .fluid-build-list h3 {
+.fluid-build .fluid-build-list h3,
+.fluid-build .fluid-build-list h4 {
     font-family: 'Roboto Slab', serif;
     font-weight: normal;
 }
