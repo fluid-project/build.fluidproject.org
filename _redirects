@@ -1,0 +1,5 @@
+/chartAuthoring/*       https://build-chartauthoring.fluidproject.org/:splat
+/first-discovery/*      https://build-firstdiscovery.fluidproject.org/:splat
+/infusion/*             https://build-infusion.fluidproject.org/:splat
+/sjrk-storyTelling/*    https://staging-stories.floeproject.org/:splat
+/videoPlayer/*          https://build-videoplayer.fluidproject.org/:splat
